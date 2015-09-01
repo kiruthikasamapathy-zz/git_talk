@@ -53,6 +53,19 @@
    </section>
 
    <section>
+    <h2> Agenda </h2><br>
+    <ul>
+       <li>Problems</li>
+       <li>Why VCS?</li>
+       <li>Git basics</li>
+       <li>Hands-on</li>
+       <li>Branching & Merging</li>
+       <li>Summary</li>
+       <li>Q&A</li>
+       <li>Quiz</li>
+   </section>
+
+   <section>
     <h2>Why time machine?</h2>
     <img width="800" data-src="images/single_user.jpg" alt="Time machine" style="border:0">
     <aside class="notes">
@@ -118,7 +131,16 @@
       <li> only when you have to share your work with the world, then you need to connect to the remote machine </li>
       <br>
       <li> stores the snapshot of all files rather than delta changes </li>
-      <li> like a mini file system </li>
+      <li> like a mini file system </li><br>
+      <li> whole copy, is that a disadvantage? </li>
+      <li> power of git </li>
+      <li> content-adressable file system</li>
+      <li> compression and delta encoding and hashes everywhere</li><br>
+      What if my repo is really big?
+     - Linux kernel 15+ million LOC
+     - more than 1000 contributors
+     - 500 thousand + commits
+
      </ul>
     </aside>
    </section>
@@ -138,7 +160,8 @@
     <aside class="notes">
      <ul>
       <li> identity - git commit uses these values </li>
-      <li> git config user.name </li>
+      <li> git config user.name </li><br>
+      <li> ssh keys</li>
      </ul>
     </aside>
    </section>
@@ -162,6 +185,25 @@
     </aside>
    </section>
 
+   <section>
+    <h2>Basic Workflow</h2>
+    <br>
+    <img width="700" data-src="images/basic_workflow1.jpg" style="border:0">
+    <aside class="notes">
+     <ul>
+      <li> edit file </li>
+      <li> git status </li>
+      <li> git add </li>
+      <li> git status </li>
+      <li> git commit </li> <br><br>
+      <li> add another file, commit  </li>
+      <li> git log  </li> <br>
+      <li> git show --format=raw </li>
+      <li> gitk &  </li>
+     </ul>
+    </aside>
+   </section>
+
    <section class="title">
     <h1>Getting an existing repo</h1>
     <br>
@@ -169,32 +211,6 @@
      <ul>
       <li>git clone https://github.com/kiruthikasamapathy/feedly</li>
       <li>over https/ssh - can add ssh keys</li>
-     </ul>
-    </aside>
-   </section>
-
-   <section>
-    <h2>Basic Workflow</h2>
-    <br>
-    <img width="900" data-src="images/basic_workflow1.jpg" style="border:0">
-    <aside class="notes">
-     <ul>
-      <li> edit file </li>
-      <li> git status </li>
-      <li> git add </li>
-      <li> git status </li>
-      <li> git commit </li>
-     </ul>
-    </aside>
-   </section>
-
-   <section>
-    <h2>Basic Workflow</h2>
-    <img width="900" data-src="images/basic_workflow.jpg" style="border:0">
-    <aside class="notes">
-     <ul>
-      <li> git log </li>
-      <li> git show --format=raw </li>
      </ul>
     </aside>
    </section>
@@ -223,20 +239,15 @@
    <section>
     <h2>Finally.... sharing</h2>
     <br>
-    <ul>
-     <li> Non linear development </li>
-     <li> Try a new idea </li>
-     <li> Isolate work units </li>
-     <li> Production hot fixes </li>
-    </ul>
     <aside class="notes">
      <ul>
+      <li> git vs github </li> <br>
       <li> git remote </li>
       <li> create a new repository in github </li>
       <li> git remote add origin </li>
       <li> git push -u origin master </li>
       <li> git remote show origin </li>
-      <br>
+      <br><br><b> second person</b>
       <li> git clone show origin </li>
       <li> edit, add, commit, push </li>
       <li> pull from other user terminal </li>
@@ -294,7 +305,8 @@
      <li> We are starting with a new project </li>
      <code> git init </code>
      <li> Start from an existing repo </li>
-     <code> git clone </code><br>
+     <code> git clone </code>
+     <br>
      <li><b> My first few test cases are green </b></li>
     </ul>
    </section>
@@ -324,7 +336,8 @@
      <li> Start from an existing repo </li>
      <code> git clone </code>
      <li> My first few test cases are green </li>
-     <code> git status && git add filename </code><br>
+     <code> git status && git add filename </code>
+     <br>
      <li><b> I want to update files to my local repository </b></li>
     </ul>
    </section>
@@ -392,14 +405,15 @@
      <li> I want to update files to my local repository </li>
      <code> git commit -m "refactor:... @pair@: zzz " </code>
      <li> Get updates pushed by my friends </li>
-     <code> git pull </code><br>
+     <code> git pull </code>
+     <br>
      <li><b> Update my changes to existing remote repository </b></li>
     </ul>
    </section>
 
    <section data-transition="none">
     <h2>In Summary...</h2>
-    <img width="900" data-src="images/summary-5.jpg" style="border:0">
+    <img width="900" data-src="images/summary-6.jpg" style="border:0">
     <aside class="notes">
      <ul>
       <li> We are starting with a new project </li>
@@ -424,6 +438,7 @@
       <li>
        GitHub, is a web-page/hosting service for projects that uses git on which you can publish your Git repositories and collaborate with other people</li>
       <li> good to use, even if not colloborating with others. Tracks your progress, you can go back to anytime, backup</li>
+      <li> add ssh keys/https </li>
     </aside>
    </section>
    <!-- END OF TUTORIAL SLIDES -->
