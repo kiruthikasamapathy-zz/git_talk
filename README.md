@@ -1,7 +1,8 @@
 # Readme
 
-These are the slides for the Apache Kakfa talk.
-This is based on a fork of the Reveal.JS library.
+These are the slides for the GIT presentation.
+
+This presentation is based on a fork of the Reveal.JS library
 
 ## Running the slides
 
